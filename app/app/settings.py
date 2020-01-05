@@ -29,8 +29,8 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-my_apps = ['core']
-
+my_apps = ['core', 'user']
+rest_apps = ['rest_framework', 'rest_framework.authtoken']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-] + my_apps
+] + rest_apps  + my_apps
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
