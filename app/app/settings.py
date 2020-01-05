@@ -29,7 +29,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-my_apps = ['core', 'user']
+my_apps = ['core', 'user', 'recipe']
 rest_apps = ['rest_framework', 'rest_framework.authtoken']
 INSTALLED_APPS = [
     'django.contrib.admin',
